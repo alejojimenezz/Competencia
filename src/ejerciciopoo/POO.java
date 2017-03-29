@@ -21,7 +21,10 @@ public class POO {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+       Turtle t= new Turtle();
        
+       Elipse e= new Elipse(t);
+       e.dibujarA(100, 100, 0,true);
     }
     
 }
