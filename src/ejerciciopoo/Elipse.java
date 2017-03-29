@@ -3,43 +3,16 @@ package ejerciciopoo;
 import ch.aplu.turtle.Turtle;
 
 public class Elipse {
-    
-    private int x,y,a;
+
     private Turtle joe;
 
-    public Elipse(int x, int y, int a) {
-        this.x = x;
-        this.y = y;
-        this.a=a;
-        joe= new Turtle();
+    public Elipse(Turtle joe) {
+        this.joe = joe;
+    }
+
+    public void dibujarE(double x,double y,double a){
+        joe.setPos(x,y);
         joe.setH(a);
-    }
-
-    public int getX() {
-        return x;
-    }
-
-    public void setX(int x) {
-        this.x = x;
-    }
-
-    public int getY() {
-        return y;
-    }
-
-    public void setY(int y) {
-        this.y = y;
-    }
-    
-    public int getA() {
-        return a;
-    }
-
-    public void setA(int a) {
-        this.a = a;
-    }
-
-    public void dibujarE(){
         for(int j=0;j<2;j++){
             for(int z=0;z<15;z++){
                 joe.right(3);
@@ -57,8 +30,10 @@ public class Elipse {
         }
     }
     
-    public void dibujarA(){
-            for(int z=0;z<15;z++){
+    public void dibujarA(double x,double y,double a){
+        joe.setPos(x,y);
+        joe.setH(a);
+        for(int z=0;z<15;z++){
                 joe.right(3);
                 joe.forward(1);
             }
