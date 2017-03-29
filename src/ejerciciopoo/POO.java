@@ -21,10 +21,6 @@ public class POO {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
-       Turtle joe= new Turtle(); 
-       Elipse e= new Elipse(100,100,0,joe);
-       e.dibujarA();
        
     }
     
