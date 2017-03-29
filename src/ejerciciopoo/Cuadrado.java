@@ -12,62 +12,17 @@ import ch.aplu.turtle.Turtle;
  * @author Estudiante
  */
 public class Cuadrado {
-    private int x;
-    private int y;
-    private int a;
-    private int t;
-    private  Turtle joe;
    
-
-    public Cuadrado(int x, int y, int a, int t) {
-        this.x = x;
-        this.y = y;
-        this.a = a;
-        this.t = t;
+    private  Turtle joe;
+ 
+    public Cuadrado() {
+     joe =  new Turtle();  
     }
-
-    public int getX() {
-        return x;
-    }
-
-    public void setX(int x) {
-        this.x = x;
-    }
-
-    public int getY() {
-        return y;
-    }
-
-    public void setY(int y) {
-        this.y = y;
-    }
-
-    public int getA() {
-        return a;
-    }
-
-    public void setA(int a) {
-        this.a = a;
-    }
-
-    public int getT() {
-        return t;
-    }
-
-    public void setT(int t) {
-        this.t = t;
-    }
-
-    public Turtle getJoe() {
-        return joe;
-    }
-
-    public void setJoe(Turtle joe) {
-        this.joe = joe;
-    }
-    
-    public void dibujar (){
-         joe =  new Turtle();
+ 
+    public void dibujar (int x,int y,double a, int t){
+        joe.setPos(x,y);
+        joe.setH(a);
+         
          for (int i = 0; i <4; i++) {
             joe.forward(t);
             joe.right(90);
