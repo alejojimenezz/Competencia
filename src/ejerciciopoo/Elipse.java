@@ -39,7 +39,7 @@ public class Elipse {
         this.a = a;
     }
 
-    public void dibujar(){
+    public void dibujarE(){
         for(int j=0;j<2;j++){
             for(int z=0;z<15;z++){
                 joe.right(3);
@@ -55,6 +55,17 @@ public class Elipse {
             }
             joe.setH(a+180);
         }
+    }
+    
+    public void dibujarA(){
+            for(int z=0;z<15;z++){
+                joe.right(3);
+                joe.forward(1);
+            }
+            for(int i=0;i<15;i++){
+                joe.right(3);
+                joe.forward(3);
+            } 
     }
     
     
